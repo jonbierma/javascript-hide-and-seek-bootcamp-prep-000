@@ -11,7 +11,7 @@ function increaseRankBy(n){
   const incrementer = document.querySelectorAll('ul.ranked-list li')
   const nParsed = parseInt(n)
   for (let i = 0; i <incrementer.length; i++){
-    j=parseInt(incrementer[i].innerHTML)
+    var j=parseInt(incrementer[i].innerHTML)
     incrementer[i].innerHTML = (j+nParsed).toString()
   }
 }
