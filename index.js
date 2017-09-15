@@ -8,7 +8,7 @@ function nestedTarget(){
 }
 
 function increaseRankBy(n){
-  const incrementer = document.getElementsByTag('li').querySelectorAll('ul.ranked-list li')
+  const incrementer = document.getElementsByTagName('li').querySelectorAll('ul.ranked-list li')
   const nParsed = parseInt(n)
   for (let i = 0; i <incrementer.length; i++){
     incrementer[i].innerHTML = (i+nParsed).toString()
@@ -16,7 +16,7 @@ function increaseRankBy(n){
 }
 
 function deepestChild(){
-  var nash = document.getElementById('grand-node').querySelector('div')
+  var nash = document.getElementById('grand-node')
   while (nash.children()){
     nash= nash.children()
   }
